@@ -674,7 +674,8 @@ rocket:
 service:
   ## @param service.type Service type
   ##
-  type: "ClusterIP"
+  type: "NodePort"
+  nodePort: 30082
   ## @param service.annotations Additional annotations for the vaultwarden service
   ##
   annotations: {}
