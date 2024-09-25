@@ -727,7 +727,7 @@ ingress:
   pathType: "Prefix"
   ## @param ingress.tlsSecret Kubernetes secret containing the SSL certificate when using the "nginx" class.
   ##
-  tlsSecret: ""
+  tlsSecret: bitwarden-tls
   ## @param ingress.nginxAllowList Comma-separated list of IP addresses and subnets to allow.
   ##
   nginxAllowList: ""
