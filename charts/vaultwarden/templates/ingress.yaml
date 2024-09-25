@@ -78,5 +78,5 @@ spec:
             service:
               name: {{ include "vaultwarden.fullname" . }}
               port:
-                name: "http"
+                name: "https"
 {{- end }}
