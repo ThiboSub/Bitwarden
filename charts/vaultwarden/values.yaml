@@ -714,7 +714,7 @@ ingress:
   tls: true
   ## @param ingress.hostname Hostname for the ingress.
   ##
-  hostname: "warden.contoso.com"
+  hostname: "bitwarden.ecoshop.com"
   ## @param ingress.additionalHostnames Additional hostnames for the ingress.
   ##
   additionalHostnames: []
