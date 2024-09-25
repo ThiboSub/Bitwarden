@@ -677,7 +677,7 @@ service:
   type: NodePort
   ports:
     - port: 443        # Port pour accéder au service
-      targetPort: https   # Port du conteneur sur lequel le service écoutera
+      targetPort: 443   # Port du conteneur sur lequel le service écoutera
       nodePort: 31738  # Le port NodePort à utiliser
   ## @param service.annotations Additional annotations for the vaultwarden service
   ##
