@@ -46,5 +46,13 @@ spec:
         - name: {{ $pvc.metadata.name }}
           persistentVolumeClaim:
             claimName: {{ $newName }}
+      volumeMounts:
+        - name: tls-certs
+          mountPath: /etc/ssl/certs  # Chemin où le certificat sera monté
+          readOnly: true
+      volumes:
+      - name: tls-certs
+        secret:
+          secretName: bitwarden-tls 
         {{- end }}
 {{- end }}
